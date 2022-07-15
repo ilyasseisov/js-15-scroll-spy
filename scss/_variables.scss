@@ -1,0 +1,52 @@
+//Colors
+$color-primary: #7b68ee;
+$color-purple: #7b42d1;
+$color-purple-dark: #8041d0;
+$color-pink: #eb3dae;
+$color-pink-dark: #de1798;
+$color-yellow: #f7ce51;
+$color-yellow-dark: #f5cd51;
+$color-blue: #5bc5fa;
+$color-blue-dark: #2ab3f8;
+$color-grey-1: #fafbfc;
+$color-grey-2: #e9ebf0;
+$color-grey-3: #b9bec7;
+$color-grey-4: #7c828d;
+$color-grey-5: #292d34;
+
+$gradient-purple: linear-gradient(
+  45deg,
+  rgba(123, 66, 209, 1) 0%,
+  rgba(123, 104, 238, 1) 100%
+);
+$gradient-pink: linear-gradient(
+  45deg,
+  rgba(222, 23, 152, 1) 0%,
+  rgba(235, 61, 174, 1) 100%
+);
+$gradient-yellow: linear-gradient(
+  45deg,
+  rgba(245, 205, 81, 1) 0%,
+  rgba(247, 206, 81, 1) 100%
+);
+$gradient-blue: linear-gradient(
+  45deg,
+  rgba(42, 179, 248, 1) 0%,
+  rgba(91, 197, 250, 1) 100%
+);
+$body-gradient: radial-gradient(
+  circle,
+  rgba(255, 255, 255, 1) 70%,
+  rgba(243, 243, 243, 1) 100%
+);
+
+$shadow-purple: 0 10px 25px rgba(123, 66, 209, 0.4);
+$shadow-pink: 0 10px 25px rgba(222, 23, 152, 0.4);
+$shadow-yellow: 0 10px 25px rgba(245, 205, 81, 0.4);
+$shadow-blue: 0 10px 25px rgba(42, 179, 248, 0.4);
+$shadow-grey: 0 10px 25px rgba(124, 130, 141, 0.4);
+$shadow-grey-soft: 0 10px 25px rgba(124, 130, 141, 0.2);
+
+$sm: 575.9px;
+$md: 767.9px;
+$lg: 1023.9px;

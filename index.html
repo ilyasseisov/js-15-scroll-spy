@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS100::15 - ScrollSpy</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li data-section="one" class="active">#1</li>
+        <li data-section="two">#2</li>
+        <li data-section="three">#3</li>
+        <li data-section="four">#4</li>
+        <li data-section="five">#5</li>
+        <li data-section="six">#6</li>
+      </ul>
+    </nav>
+    <section class="one">
+      <div class="subsection">
+        <h1 class="title">Intersection Observer</h1>
+        <p class="paragraph">
+          The Intersection Observer API provides a way to asynchronously observe
+          changes in the intersection of a target element with an ancestor
+          element or with a top-level document's viewport.
+        </p>
+      </div>
+      <div class="subsection">
+        <img src="img/bubble.png" />
+      </div>
+    </section>
+    <section class="two">
+      <h5 class="text">
+        Historically, detecting visibility of an element, or the relative
+        visibility of two elements in relation to each other, has been a
+        difficult task for which solutions have been unreliable and prone to
+        causing the browser and the sites the user is accessing to become
+        sluggish. As the web has matured, the need for this kind of information
+        has grown. Intersection information is needed for many reasons, such as:
+      </h5>
+    </section>
+    <section class="three">
+      <div class="subsection">
+        <img src="img/lazy.png" />
+      </div>
+      <div class="subsection">
+        <img src="img/scroll.png" />
+      </div>
+    </section>
+    <section class="four">
+      <h5 class="text">
+        Implementing intersection detection in the past involved event handlers
+        and loops calling methods like Element.getBoundingClientRect() to build
+        up the needed information for every element affected. Since all this
+        code runs on the main thread, even one of these can cause performance
+        problems. When a site is loaded with these tests, things can get
+        downright ugly.
+      </h5>
+    </section>
+    <section class="five">
+      <div class="subsection">
+        <p class="paragraph">
+          The Intersection Observer API lets code register a callback function
+          that is executed whenever an element they wish to monitor enters or
+          exits another element (or the viewport), or when the amount by which
+          the two intersect changes by a requested amount.
+        </p>
+      </div>
+      <div class="subsection">
+        <div class="blob">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M42.1,-48.3C50.3,-34,49.7,-17,51.5,1.9C53.4,20.7,57.7,41.4,49.6,55.9C41.4,70.5,20.7,78.8,2,76.8C-16.7,74.8,-33.4,62.5,-47.5,48C-61.5,33.4,-73,16.7,-70.3,2.7C-67.6,-11.4,-50.9,-22.8,-36.8,-37.1C-22.8,-51.4,-11.4,-68.6,2.8,-71.4C17,-74.2,34,-62.6,42.1,-48.3Z"
+              transform="translate(100 100)"
+            />
+          </svg>
+          <img src="img/shape.png" />
+        </div>
+      </div>
+    </section>
+    <section class="six">
+      <h5 class="text">
+        One thing the Intersection Observer API can't tell you: the exact number
+        of pixels that overlap or specifically which ones they are; however, it
+        covers the much more common use case of "If they intersect by somewhere
+        around N%, I need to do something."
+      </h5>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
