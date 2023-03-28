@@ -1,7 +1,9 @@
+// variables
 const sections = document.querySelectorAll('section');
 const navElements = document.querySelectorAll('ul li');
 let activeSectionIndicator = '';
 
+// intersection observer
 const observer = new IntersectionObserver(
   (entries) => {
     entries.forEach((entry) => {
