@@ -25,14 +25,14 @@ $purple-light: #90a8ed;
 }
 
 nav {
-  width: 200px;
+  width: 120px;
   background: #fff;
-  padding: 24px;
+  padding: 12px;
   border: 6px solid black;
   box-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black,
     5px 5px black, 6px 6px black, 7px 7px black, 8px 8px black;
 
-  height: 400px;
+  height: 320px;
   color: black;
   display: flex;
   justify-content: center;
@@ -42,33 +42,35 @@ nav {
   top: 50%;
   transform: translateY(-50%);
   z-index: 100;
+  //
+  @media (min-width: 1200px) {
+    width: 200px;
+    padding: 24px;
+    height: 400px;
+  }
+  //
   ul {
     width: 100%;
     text-align: center;
     li {
       display: list-item;
-      font-size: 24px;
-      padding: 16px;
+      font-size: 16px;
+      padding: 12px;
       transition: 0.4s;
       position: relative;
+      @media (min-width: 1200px) {
+        font-size: 24px;
+        padding: 16px;
+      }
+      //
       &.active {
         background-color: $orange;
-        border: 6px solid #000;
+        border: 4px solid #000;
         font-weight: 800;
-        font-size: 40px;
-        &::after {
-          content: '';
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 20px;
-          left: 24px;
-          z-index: -1;
-          background-color: #fff;
-          background-image: radial-gradient(#000 19%, transparent 20%),
-            radial-gradient(#000 19%, transparent 20%);
-          background-size: 30px 30px;
-          background-position: 0 0, 15px 15px;
+        font-size: 24px;
+        @media (min-width: 1200px) {
+          font-size: 40px;
+          border: 6px solid #000;
         }
       }
     }
@@ -83,12 +85,33 @@ section {
   align-items: center;
   font-size: 48px;
   transition: 2s;
+  flex-direction: column;
+  //
+  @media (min-width: 1200px) {
+    flex-direction: row;
+  }
+  //
+  .subsection {
+    width: 100%;
+    @media (min-width: 1200px) {
+      width: 50%;
+    }
+  }
+  //
+  img {
+    max-width: 200px;
+    //
+    @media (min-width: 1200px) {
+      max-width: 400px;
+    }
+  }
 
   &.one {
     background-color: $emerald;
     display: flex;
+
+    //
     .subsection {
-      width: 50%;
       height: 100%;
       &:nth-of-type(1) {
         background-color: $yellow;
@@ -115,7 +138,6 @@ section {
         justify-content: center;
         align-items: center;
         img {
-          max-width: 400px;
           position: absolute;
           top: 50%;
           left: 50%;
@@ -124,13 +146,14 @@ section {
       }
     }
   }
+  //
   &.two {
     background-color: $pink;
   }
+  //
   &.three {
     background-color: $yellow-light;
     .subsection {
-      width: 50%;
       height: 100%;
       &:nth-of-type(1) {
         background-color: $pink-dark;
@@ -160,12 +183,13 @@ section {
       }
     }
   }
+  //
   &.four {
     background-color: $purple-light;
   }
+  //
   &.five {
     .subsection {
-      width: 50%;
       height: 100%;
       &:nth-of-type(1) {
         background-color: $emerald;
@@ -208,6 +232,7 @@ section {
       }
     }
   }
+  //
   &.six {
     background-color: $pink-dark;
   }
@@ -220,16 +245,41 @@ section {
 
 // design system
 .title {
-  font-size: 100px;
+  font-size: 24px;
   font-weight: 800;
-}
-.paragraph {
-  font-size: 32px;
-  font-weight: 400;
+  //
+  @media (min-width: 320px) {
+    font-size: 40px;
+  }
+  //
+  @media (min-width: 575px) {
+    font-size: 60px;
+  }
+  //
+  @media (min-width: 1200px) {
+    font-size: 92px;
+  }
 }
 
 .text {
   max-width: 80%;
   font-weight: 400;
-  font-size: 48px;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  -ms-hyphens: auto;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  font-size: 16px;
+  //
+  @media (min-width: 320px) {
+    font-size: 24px;
+  }
+  //
+  @media (min-width: 575px) {
+    font-size: 32px;
+  }
+  @media (min-width: 1200px) {
+    font-size: 48px;
+  }
 }
