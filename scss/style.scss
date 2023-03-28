@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap');
 @import 'framework';
 
 $pink: #ff90e8;
@@ -281,5 +282,25 @@ section {
   }
   @media (min-width: 1200px) {
     font-size: 48px;
+  }
+}
+
+.jssecrets {
+  font-weight: 500;
+  text-decoration: none !important;
+  font-family: 'Urbanist';
+  padding: 16px;
+  background: #ffc805;
+  color: #000000;
+  font-size: 1.2em;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px #b8900030, 0px 8px 24px #b8900060;
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-4px);
   }
 }

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@500&display=swap");
 *,
 ::before,
 ::after {
@@ -273,4 +274,24 @@ section.red {
   .text {
     font-size: 48px;
   }
+}
+
+.jssecrets {
+  font-weight: 500;
+  text-decoration: none !important;
+  font-family: "Urbanist";
+  padding: 16px;
+  background: #ffc805;
+  color: #000000;
+  font-size: 1.2em;
+  letter-spacing: 0.2px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(184, 144, 0, 0.1882352941), 0px 8px 24px rgba(184, 144, 0, 0.3764705882);
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  transition: all 0.3s;
+}
+.jssecrets:hover {
+  transform: translateY(-4px);
 }
