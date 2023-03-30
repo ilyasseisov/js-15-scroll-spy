@@ -16,7 +16,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { rootMargin: '-10% 0px -90% 0px' }
+  { root: document, rootMargin: '-10% 0px -90% 0px' }
 );
 
 sections.forEach((section) => {
